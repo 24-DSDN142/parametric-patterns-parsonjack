@@ -1,22 +1,22 @@
-You will need to fill out this file for hand in. 
-
-The bellow is just an example, feel free to disregard this documents contents.
-
-
-Your final settings.txt will look something like this when you are finished:
-
 /////////////////////////////////
 
 Wallpaper 1:
 
-//your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let HEISWATCHING = true;
+let eyeballsize =50;
+let pupilsize =20;
+let pupil2size =17;
+let pupil2size2 =55;
+let pupil3size =17;
+let holesize=8
+let hole2size=8
+let hole3size=8
+let offsetx = 0
+let offsety = 0
+
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -24,23 +24,29 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let rect_width  = 20;
+let rect_height = 20;
+let HEISWATCHING = true;
+let eyeballsize =60;
+let pupilsize =17.5;
+let pupil2size =13;
+let pupil2size2 =59;
+let pupil3size =21;
+let holesize=4
+let hole2size=8
+let hole3size=12
+
+ ellipse(eyeballx, eyebally, pupilsize, pupilsize);
+ //central pupil position ^
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -48,7 +54,253 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+
+}
+
+/////////////////////////////////
+
+Wallpaper 3.
+
+let rect_width  = 20;
+let rect_height = 20;
+let HEISWATCHING = true;
+let eyeballsize =56;
+let pupilsize =20;
+let pupil2size =15;
+let pupil2size2 =59;
+let pupil3size =19;
+// ^ strokeweight +2
+let holesize=10
+let hole2size=8
+let hole3size=6
+let offsetx = 0
+let offsety = 0
+//bigcircle strokeweight +10
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+
+}
+
+
+/////////////////////////////////
+
+Wallpaper 4.
+
+
+let rect_width  = 20;
+let rect_height = 20;
+let HEISWATCHING = true;
+let eyeballsize =50;
+let pupilsize =20;
+let pupil2size =9;
+let pupil2size2 =63;
+let pupil3size =25;
+let holesize=12
+//^ strokeweight+3
+let hole2size=13
+let hole3size=30
+let offsetx = 0
+let offsety = 0
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+let rect_width  = 20;
+let rect_height = 20;
+let HEISWATCHING = true;
+let eyeballsize =100;
+let pupilsize =50;
+let pupil2size =17;
+let pupil2size2 =55;
+let pupil3size =17;
+// ^ strokeweight +2
+let holesize=8
+let hole2size=10
+let hole3size=8
+//let h3y = (-10)^
+let offsetx = 0
+let offsety = -15
+let bcsize=10
+//moved one piece of code for the diamond eyes below the eyeball function so that it
+appears in front
+//line strokeweight +7
+//border strokeweight +5
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+let rect_width  = 20;
+let rect_height = 20;
+let HEISWATCHING = false;
+let eyeballsize =50;
+let pupilsize =20;
+let pupil2size =17;
+let pupil2size2 =55;
+let pupil3size =17;
+let holesize=15
+//^strokeweight+4
+let hole2size=15
+let hole3size=40
+//^strokeweight +3
+let offsetx = 0
+let offsety = 0
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+let rect_width  = 20;
+let rect_height = 20;
+let HEISWATCHING = false;
+let eyeballsize =50;
+let pupilsize =20;
+let pupil2size =17;
+let pupil2size2 =55;
+let pupil3size =17;
+let holesize=12.5
+//^strokeweight+7
+let hole2size=15
+let hole3size=35
+//^strokeweight +3
+let bcsize = 35
+let offsetx = 0
+let offsety = 0
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+
+/////////////////////////////////
+Wallpaper 8.
+
+let rect_width  = 20;
+let rect_height = 20;
+let HEISWATCHING = true;
+let eyeballsize =56;
+let pupilsize =30;
+let pupil2size =17;
+let pupil2size2 =55;
+let pupil3size =17;
+let holesize=6
+let hole2size=8
+let hole3size=15
+let offsetx = 0
+let offsety = 0
+//bigcircle strokeweight +10
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+
+}
+
+
+
+/////////////////////////////////
+
+Wallpaper 9.
+
+
+let rect_width  = 20;
+let rect_height = 20;
+let HEISWATCHING = true;
+let eyeballsize =60;
+let pupilsize =30;
+let pupil2size =9;
+let pupil2size2 =63;
+let pupil3size =25;
+let holesize=15
+//^ strokeweight+3
+let hole2size=10
+let hole3size=25
+let bcsize =140
+let offsetx = 0
+let offsety = 0
+//line strokeweight +1
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
